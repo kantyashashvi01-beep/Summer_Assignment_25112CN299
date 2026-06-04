@@ -20,3 +20,18 @@ int fibonacci(int n) {
     return b;
 }
 
+int main() {
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    int result = fibonacci(n);
+    if (result == -1) {
+        printf("Fibonacci is not defined for negative numbers.\n");
+    } else {
+        printf("The %d-th Fibonacci number is: %d\n", n, result);
+    }
+    
+    return 0;
+
+
